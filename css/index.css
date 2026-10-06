@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fastly.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body {
+  background: #ECEDE7;
+  background: #F2F2F2;
+}
+body * {
+  color: var(--color-black);
+  font-size: 1.6rem;
+  line-height: 1.4;
+  box-sizing: border-box;
+  font-family: "SUIT", sans-serif;
+  font-family: "Gowun Batang", serif;
+}
+
+main {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-cream);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.04);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  text-align: center;
+}
+section:not(.hero) {
+  padding: 60px 24px;
+}
+section .eng-text {
+  display: block;
+  color: var(--color-green);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-bottom: 24px;
+}
+
+.message dl,
+.message dl dd,
+.message ul {
+  display: flex;
+  flex-direction: column;
+}
+.message dl {
+  row-gap: 24px;
+}
+.message dl dt {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.message dl dd {
+  row-gap: 20px;
+}
+.message dl dd p {
+  line-height: 1.8;
+}
+.message ul {
+  row-gap: 8px;
+  margin-top: 24px;
+}
+.message ul * {
+  font-size: 1.4rem;
+}
+.message ul li {
+  color: var(--color-gray);
+}
+.message ul span {
+  color: var(--color-black);
+}
+
+.day,
+.location {
+  position: relative;
+}
+.day::before,
+.location::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100%;
+  background: rgba(118, 156, 93, 0.08);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.day dl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.day dl dt {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.day dl dd {
+  font-size: 2rem;
+}
+.day h4 {
+  color: var(--color-gray);
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.day hr {
+  width: 100%;
+  height: 1px;
+  background: var(--color-gray);
+  background: #ECEDE7;
+  border: none;
+  margin: 0;
+}
+.day .calendar {
+  background: var(--color-cream);
+  border-radius: 20px;
+  padding: 42px;
+  margin-top: 24px;
+  position: relative;
+}
+.day table {
+  width: 100%;
+  margin: 12px 0;
+}
+.day table th, .day table td {
+  padding: 7.1428571429% 0;
+  position: relative;
+}
+.day table th span, .day table td span {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.day table .wedding-day::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  background: var(--color-green);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.day table .wedding-day span {
+  display: block;
+  color: var(--color-white);
+}
+.day table .saturday span {
+  color: var(--color-saturday);
+}
+.day table .sunday span {
+  color: var(--color-sunday);
+}
+.day .countdown {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  padding: 0 40px;
+  margin: 24px 0 -12px;
+}
+.day .countdown > div {
+  display: flex;
+  flex-direction: column;
+}
+.day .countdown p {
+  color: var(--color-gray);
+  font-size: 1.2rem;
+}
+.day .countdown span {
+  font-size: 2rem;
+}
+
+.gallery .img-box {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 2px;
+  column-gap: 2px;
+}
+.gallery figure {
+  padding: 25% 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.gallery figure img {
+  max-width: inherit;
+  max-height: inherit;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery .img01 {
+  grid-area: 1/3/3/1;
+}
+.gallery .img01 img {
+  max-height: 100%;
+}
+.gallery .img02 img {
+  max-width: 100%;
+  top: 35%;
+}
+.gallery .img03 {
+  grid-area: 1/6/3/4;
+}
+.gallery .img03 img {
+  max-height: 100%;
+  left: 55%;
+}
+.gallery .img04 img {
+  max-width: 100%;
+}
+.gallery .img05 {
+  grid-area: 5/2/3/1;
+}
+.gallery .img05 img {
+  max-height: 100%;
+  left: 20%;
+}
+.gallery .img06 {
+  grid-area: 5/4/3/2;
+}
+.gallery .img06 img {
+  max-width: 100%;
+  top: auto;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+.gallery .img07 {
+  grid-area: 4/6/3/4;
+}
+.gallery .img07 img {
+  max-width: 100%;
+  top: 60%;
+}
+.gallery .img08 {
+  grid-area: 6/3/5/1;
+}
+.gallery .img08 img {
+  max-width: 100%;
+  top: 12%;
+}
+.gallery .img09 {
+  grid-area: 6/4/5/3;
+}
+.gallery .img09 img {
+  max-height: 100%;
+  left: 45%;
+}
+.gallery .img10 {
+  grid-area: 6/6/4/4;
+}
+.gallery .img10 img {
+  max-height: 100%;
+}
+
+.location .text {
+  display: flex;
+  flex-direction: column;
+}
+.location .text h5 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.location .text p {
+  font-size: 1.8rem;
+  margin: 8px 0 16px;
+}
+.location .text span {
+  color: var(--color-gray);
+}
+.location .map {
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+  margin: 24px 0;
+  overflow: hidden;
+}
+.location .root_daum_roughmap,
+.location .wrap_map {
+  width: 100%;
+  height: 100%;
+}
+.location .cont,
+.location .map_border,
+.location .wrap_controllers.hide {
+  display: none;
+}
+.location .links {
+  display: flex;
+  column-gap: 12px;
+}
+.location .links > a {
+  display: inline-block;
+  flex: 1;
+  background: var(--color-white);
+  border: 1px solid var(--color-green);
+  border-radius: 16px;
+  text-align: center;
+  padding: 8px 0;
+}
+.location dl {
+  text-align: left;
+  margin-top: 32px;
+}
+.location dl dt {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.location dl dd {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.location dl dd p {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+.location dl dd span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateY(0.1em);
+}
+.location dl dd span.blue {
+  background: #386de8;
+}
+.location dl dd span.green {
+  background: #3cc344;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.accordion li {
+  border: 1px solid var(--color-green);
+  border-radius: 16px;
+}
+.accordion li > button {
+  width: 100%;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion i {
+  color: var(--color-gray);
+}
+.accordion .inner,
+.accordion .item {
+  display: flex;
+  flex-direction: column;
+}
+.accordion .inner {
+  width: 100%;
+  row-gap: 8px;
+  padding: 0 20px 20px;
+}
+.accordion .item {
+  width: 100%;
+  row-gap: 4px;
+  align-items: flex-start;
+  background: rgba(118, 156, 93, 0.08);
+  border-radius: 12px;
+  color: var(--color-gray);
+  font-size: 1.4rem;
+  padding: 12px;
+}
+.accordion .item .flex-row {
+  width: 100%;
+  column-gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion .item p {
+  font-size: 1.4rem;
+  text-align: left;
+}
+.accordion .item button {
+  flex-shrink: 0;
+}
+
+.account .text p {
+  line-height: 1.8;
+}
+.account ul {
+  margin-top: 24px;
+}
+
+.contact .a-box {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.guestbook dl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.guestbook dl dt {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.guestbook dl dd {
+  line-height: 1.8;
+}
