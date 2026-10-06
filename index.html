@@ -407,10 +407,10 @@
             </dl>
         </section>
         <section class="share">
-            <a  href="javascript:shareMessage()">
+            <button type="button" onclick="shareMessage()">
                 <p>카카오톡 공유하기</p>
                 <i class="fa-solid fa-share-nodes"></i>
-            </a>
+            </button>
         </section>
     </main>
 </body>
@@ -461,7 +461,9 @@
     document.querySelector(".gallery-popup .close").addEventListener("click", closeGallery);
 
     galleryPopup.addEventListener("click", (e) => {
-        if (e.target === galleryPopup) {
+        const swiper = galleryPopup.querySelector(".gallery-swiper");
+
+        if (!swiper.contains(e.target)) {
             closeGallery();
         }
     });
@@ -539,12 +541,12 @@
 
         toast.textContent = message;
 
-        toast.classList.add("show");
+        toast.classList.add("is-on");
 
         clearTimeout(toast.timer);
 
         toast.timer = setTimeout(() => {
-            toast.classList.remove("show");
+            toast.classList.remove("is-on");
         }, 1800);
     }
 </script>
@@ -560,7 +562,7 @@
 
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.8.3/kakao.min.js"></script>
 <script>
-    Kakao.init('${374616c8ee3c59198ee89699c3f02e18}');
+    Kakao.init('374616c8ee3c59198ee89699c3f02e18');
 </script>
 
 <script>
@@ -569,11 +571,11 @@
             objectType: 'feed',
             content: {
                 title: '소중한 분들을 초대합니다',
-                imageUrl:
-                    'http://k.kakaocdn.net/dn/bLPLfX/dJMcacayNt1/iWQpxLOqbqcyg2hxzKCEE1/kakaolink40_original.png',
+                description: '우리의 특별한 날에 함께해주세요.',
+                imageUrl: 'https://iam2chorong.github.io/wedding/images/kakao.jpg',
                 link: {
-                    mobileWebUrl: 'https://developers.kakao.com',
-                    webUrl: 'https://developers.kakao.com',
+                    mobileWebUrl: 'https://iam2chorong.github.io/wedding/',
+                    webUrl: 'https://iam2chorong.github.io/wedding/',
                 },
             },
             social: {
@@ -585,8 +587,8 @@
                 {
                     title: '청첩장 보기',
                     link: {
-                        mobileWebUrl: 'https://developers.kakao.com',
-                        webUrl: 'https://developers.kakao.com',
+                        mobileWebUrl: 'https://iam2chorong.github.io/wedding/',
+                        webUrl: 'https://iam2chorong.github.io/wedding/',
                     },
                 },
             ],
