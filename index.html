@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Invitation</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <main>
@@ -164,6 +167,72 @@
                 <figure class="img09"><img src="./images/images17.jpg" alt=""></figure>
                 <figure class="img10"><img src="./images/images14.jpg" alt=""></figure>
             </div>
+            <div class="gallery-popup">
+                <div class="inner">
+                    <button class="close" type="button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="swiper gallery-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/images01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images02.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images03.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images04.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images05.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images06.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images07.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images08.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images09.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images10.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images11.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images12.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images13.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images14.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images15.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images16.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/images17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="button-prev" type="button"><i class="fa-solid fa-angle-left"></i></button>
+                            <button class="button-next" type="button"><i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="location">
             <span class="eng-text">LOCATION</span>
@@ -172,14 +241,14 @@
                 <p>대전 유성구 수통골로71번길 39</p>
                 <span>2026.11.15 SUNDAY · 12:00</span>
             </div>
-            <div class="map-box">
-                <div class="map">
+            <div class="map-wrap">
+                <div class="map-box">
                     <div id="daumRoughmapContainer1791287504973" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                 </div>
                 <div class="links">
-                    <a href="">네이버지도</a>
-                    <a href="">티맵</a>
-                    <a href="">카카오내비</a>
+                    <a target="_blank" href="https://map.naver.com/p/directions/-/3zuOe8,2zWTBb,%EC%8B%9C%ED%81%AC%EB%A6%BF%EA%B0%80%EB%93%A0%EC%9B%A8%EB%94%A9,1859886865,PLACE_POI/-/car?c=15.00,0,0,0,dh">네이버지도</a>
+                    <a target="_blank" href="tmap://route?goalname=시크릿가든웨딩&goalx=127.2913172&goaly=36.3474174">티맵</a>
+                    <a target="_blank" href="https://kko.to/-oev2SM5Td">카카오내비</a>
                 </div>
                 <dl>
                     <dt>버스</dt>
@@ -204,10 +273,6 @@
                     오래도록 간직하며 <br />
                     행복한 모습으로 보답하며 살겠습니다.
                 </p>
-                <p>
-                    참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다. <br />
-                    너그러운 마음으로 양해 부탁드립니다.
-                </p>
             </div>
             <ul class="accordion">
                 <li>
@@ -221,7 +286,7 @@
                                 신랑
                                 <div class="flex-row">
                                     <p>농협은행 302-1088-9769-51</p>
-                                    <button><i class="fa-solid fa-copy"></i></button>
+                                    <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +303,7 @@
                                 신부
                                 <div class="flex-row">
                                     <p>국민은행 595101-01-531093</p>
-                                    <button><i class="fa-solid fa-copy"></i></button>
+                                    <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -341,15 +406,148 @@
                 </dd>
             </dl>
         </section>
-        <section class="share" href="javascript:shareMessage()">
-            <a href="">
+        <section class="share">
+            <a  href="javascript:shareMessage()">
                 <p>카카오톡 공유하기</p>
                 <i class="fa-solid fa-share-nodes"></i>
             </a>
         </section>
     </main>
 </body>
+<script>
+    // gallery
+    const galleryPopup = document.querySelector(".gallery-popup");
+    const gallerySwiper = new Swiper(".gallery-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+            nextEl: ".gallery-swiper .button-next",
+            prevEl: ".gallery-swiper .button-prev",
+        },
+        keyboard: {
+            enabled: true,
+        },
+        allowTouchMove: true,
+    });
 
+    document.querySelectorAll(".gallery .img-box figure").forEach((figure) => {
+        figure.addEventListener("click", () => {
+            console.log('ddd')
+            const img = figure.querySelector("img");
+            const match = img.src.match(/images(\d+)\.jpg$/);
+
+            let imageNumber = 1;
+
+            if (match) {
+                imageNumber = Number(match[1]);
+            }
+            const slideIndex = imageNumber - 1;
+
+            galleryPopup.classList.add("is-on");
+
+            if (
+                slideIndex >= 0 &&
+                slideIndex < gallerySwiper.slides.length
+            ) {
+                gallerySwiper.slideTo(slideIndex, 0);
+            } else {
+                gallerySwiper.slideTo(0, 0);
+            }
+
+            document.body.style.overflow = "hidden";
+        });
+
+    });
+    document.querySelector(".gallery-popup .close").addEventListener("click", closeGallery);
+
+    galleryPopup.addEventListener("click", (e) => {
+        if (e.target === galleryPopup) {
+            closeGallery();
+        }
+    });
+
+    function closeGallery() {
+        galleryPopup.classList.remove("is-on");
+        document.body.style.overflow = "";
+    }
+
+    document.querySelector(".gallery-popup").addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+    });
+
+    document.querySelector(".gallery-popup").addEventListener("dragstart", (e) => {
+        e.preventDefault();
+    });
+
+    document.querySelector(".gallery-popup").addEventListener("touchstart", (e) => {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    // accordion
+    document.querySelectorAll(".accordion > li > button").forEach((button) => {
+        button.addEventListener("click", () => {
+            const li = button.parentElement;
+            const content = button.nextElementSibling;
+
+            li.classList.toggle("is-on");
+
+            if (li.classList.contains("is-on")) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+                content.style.maxHeight = "0";
+            }
+        });
+    });
+
+    // account
+    document.querySelectorAll(".copy-button").forEach((button) => {
+        button.addEventListener("click", async () => {
+            const accountText = button
+                .closest(".flex-row")
+                .querySelector("p")
+                .textContent;
+
+            const accountNumber = accountText.replace(/\D/g, "");
+
+            try {
+                await navigator.clipboard.writeText(accountNumber);
+                showToast("복사되었습니다.");
+            } catch (error) {
+                const textarea = document.createElement("textarea");
+                textarea.value = accountNumber;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                textarea.remove();
+
+                showToast("복사되었습니다.");
+            }
+        });
+    });
+
+    // Toast
+    function showToast(message) {
+        let toast = document.querySelector(".toast");
+
+        if (!toast) {
+            toast = document.createElement("div");
+            toast.className = "toast";
+            document.body.appendChild(toast);
+        }
+
+        toast.textContent = message;
+
+        toast.classList.add("show");
+
+        clearTimeout(toast.timer);
+
+        toast.timer = setTimeout(() => {
+            toast.classList.remove("show");
+        }, 1800);
+    }
+</script>
 <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://t1.kakaocdn.net/kakaomapweb/roughmap/loader/prod/roughmapLoader.js"></script>
 <script charset="UTF-8">
 	new daum.roughmap.Lander({
