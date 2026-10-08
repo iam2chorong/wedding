@@ -66,6 +66,16 @@ section {
 	}
 }
 .hero {
+    position: relative;
+    .bgm-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+        i {
+            color: var(--color-white);
+        }
+    }
     .img-box {
         position: relative;
         > span {

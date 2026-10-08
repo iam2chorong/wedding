@@ -65,6 +65,18 @@ section .eng-text {
   font-family: var(--font-ephesis);
 }
 
+.hero {
+  position: relative;
+}
+.hero .bgm-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+.hero .bgm-button i {
+  color: var(--color-white);
+}
 .hero .img-box {
   position: relative;
 }

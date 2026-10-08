@@ -15,7 +15,13 @@
 </head>
 <body>
     <main>
+        <audio class="bgm" autoplay>
+            <source src="./music/bgm.mp3" type="audio/mpeg">
+        </audio>
         <section class="hero">
+            <button class="bgm-button">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
             <div class="img-box">
                 <figure><img src="./images/hero.jpg" alt=""></figure>
                 <span><img src="./images/top.svg" alt=""></span>
@@ -44,11 +50,11 @@
             <ul data-aos="fade-up">
                 <li>
                     <span>신문섭 · 윤일선</span>의 차남 
-                    <span>신재선</span>
+                    <span>재선</span>
                 </li>
                 <li>
                     <span>이용림 · 박규희</span>의 장녀
-                    <span>이초롱</span>
+                    <span>초롱</span>
                 </li>
             </ul>
         </section>
@@ -482,6 +488,10 @@
     // intro
     window.scrollTo(0, 0);
     document.body.classList.add("scrollX");
+
+    const bgm = document.querySelector(".bgm");
+    bgm.pause();
+
     const intro = document.querySelector("article");
     const textElements = intro.querySelectorAll(".flex p");
 
@@ -504,12 +514,29 @@
         }, 2000);
         setTimeout(() => {
             intro.classList.add("is-move");
+
+            bgm.play().catch(() => {});
+
             setTimeout(() => {
                 AOS.init();
                 AOS.refresh();
                 document.body.classList.remove("scrollX");
             }, 1000);
         }, 2400);
+    });
+
+    // bgm
+    const bgmButton = document.querySelector(".bgm-button");
+    const bgmIcon = bgmButton.querySelector("i");
+
+    bgmButton.addEventListener("click", () => {
+        if (bgm.paused) {
+            bgm.play();
+            bgmIcon.className = "fa-solid fa-volume-high";
+        } else {
+            bgm.pause();
+            bgmIcon.className = "fa-solid fa-volume-xmark";
+        }
     });
 
     // countdown
