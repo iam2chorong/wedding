@@ -323,7 +323,7 @@ section .eng-text {
   height: 100%;
 }
 .gallery .gallery-popup .inner {
-  width: 100%;
+  width: calc(100% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,6 +332,7 @@ section .eng-text {
   background: rgba(60, 68, 56, 0.9);
   border-radius: 12px;
   padding: 16px 40px 40px;
+  margin: 0 auto;
   position: relative;
 }
 .gallery .gallery-popup i {
@@ -691,7 +692,7 @@ article.is-move {
   position: absolute;
 }
 article.is-move .flex {
-  transform: translateY(-16em);
+  transform: translateY(-240px);
   transition-delay: 0.2s;
 }
 article.is-move .flex * {
