@@ -53,7 +53,7 @@ section .flex-row:has(> .eng-text) .icon {
   display: block;
   width: 46px;
   flex-shrink: 0;
-  margin: 0 0 -16px -12px;
+  margin: 0 0 -12px -12px;
 }
 section .eng-text {
   flex-shrink: 0;
