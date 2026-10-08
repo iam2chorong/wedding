@@ -669,9 +669,9 @@ article {
         align-items: center;
         justify-content: center;
         margin: auto 0;
-        position: relative;
         z-index: 1;
         transition: all 0.6s linear;
+        @include position(absolute, 50%, 50%);
         * {
             color: #7F8D6C;
             font-size: 7.2rem;
@@ -714,7 +714,7 @@ article {
     &.is-move {
         position: absolute;
         .flex {
-            transform: translateY(-240px);
+            top: 28%;
             transition-delay: 0.2s;
             * {
                 color: #FBE178;

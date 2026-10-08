@@ -677,9 +677,12 @@ article .flex {
   align-items: center;
   justify-content: center;
   margin: auto 0;
-  position: relative;
   z-index: 1;
   transition: all 0.6s linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 article .flex * {
   color: #7F8D6C;
@@ -715,7 +718,7 @@ article.is-move {
   position: absolute;
 }
 article.is-move .flex {
-  transform: translateY(-240px);
+  top: 28%;
   transition-delay: 0.2s;
 }
 article.is-move .flex * {
