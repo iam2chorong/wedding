@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Invitation</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -15,14 +17,14 @@
     <main>
         <section class="hero">
             <div class="img-box">
-                <figure><img src="./images/hero.png" alt=""></figure>
+                <figure><img src="./images/hero.jpg" alt=""></figure>
+                <span><img src="./images/top.svg" alt=""></span>
             </div>
         </section>
         <section class="message">
-            <span class="eng-text">INVITATION</span>
             <dl>
-                <dt>소중한 분들을 초대합니다</dt>
-                <dd>
+                <dt data-aos="fade-up">소중한 분들을 초대합니다</dt>
+                <dd data-aos="fade-up" data-aos-delay="200">
                     <p>
                         서로 다른 하루를 보내던 두 사람이 만나 <br />
                         함께 웃고, 함께 걷고, <br />
@@ -39,7 +41,7 @@
                     </p>
                 </dd>
             </dl>
-            <ul>
+            <ul data-aos="fade-up">
                 <li>
                     <span>신문섭 · 윤일선</span>의 차남 
                     <span>신재선</span>
@@ -51,13 +53,13 @@
             </ul>
         </section>
         <section class="day">
-            <span class="eng-text">WEDDING DAY</span>
-            <dl>
-                <dt>2026년 11월 15일</dt>
-                <dd>일요일 오후 12시</dd>
-            </dl>
-            <div class="calendar">
+            <div class="flex-row">
+                <span class="eng-text">Wedding day</span>
                 <hr>
+                <span class="icon"><img src="./images/flower.svg" alt=""></span>
+            </div>
+            <div class="calendar">
+                <h5>2026.11.15 오후 12:00</h5>
                 <table>
                     <thead>
                         <tr>
@@ -122,7 +124,7 @@
                 </table>
                 <hr>
                 <div class="countdown">
-                    <div class="number">
+                    <div class="days number">
                         <p>DAYS</p>
                         <span>00</span>
                     </div>
@@ -130,7 +132,7 @@
                         <p>&nbsp;</p>
                         <span>:</span>
                     </div>
-                    <div class="number">
+                    <div class="hour number">
                         <p>HOUR</p>
                         <span>00</span>
                     </div>
@@ -138,7 +140,7 @@
                         <p>&nbsp;</p>
                         <span>:</span>
                     </div>
-                    <div class="number">
+                    <div class="min number">
                         <p>MIN</p>
                         <span>00</span>
                     </div>
@@ -146,15 +148,22 @@
                         <p>&nbsp;</p>
                         <span>:</span>
                     </div>
-                    <div class="SEC">
-                        <p>DAYS</p>
+                    <div class="sec number">
+                        <p>SEC</p>
                         <span>00</span>
                     </div>
                 </div>
             </div>
         </section>
         <section class="gallery">
-            <span class="eng-text">GALLERY</span>
+            <div class="flex-row">
+                <span class="eng-text">Gallery</span>
+                <hr>
+                <span class="icon"><img src="./images/flower.svg" alt=""></span>
+            </div>
+            <div class="text">
+                <p>사진을 터치하시면 크게 보실 수 있습니다.</p>
+            </div>
             <div class="img-box">
                 <figure class="img01"><img src="./images/images07.jpg" alt=""></figure>
                 <figure class="img02"><img src="./images/images04.jpg" alt=""></figure>
@@ -168,62 +177,64 @@
                 <figure class="img10"><img src="./images/images14.jpg" alt=""></figure>
             </div>
             <div class="gallery-popup">
-                <div class="inner">
-                    <button class="close" type="button">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <div class="swiper gallery-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./images/images01.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images02.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images03.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images04.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images05.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images06.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images07.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images08.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images09.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images10.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images11.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images12.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images13.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images14.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images15.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images16.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./images/images17.jpg" alt="">
+                <div class="flex">
+                    <div class="inner">
+                        <button class="close" type="button">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <div class="swiper gallery-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/images01.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images02.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images03.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images04.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images05.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images06.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images07.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images08.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images09.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images10.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images11.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images12.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images13.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images14.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images15.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images16.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/images17.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="buttons">
@@ -235,7 +246,11 @@
             </div>
         </section>
         <section class="location">
-            <span class="eng-text">LOCATION</span>
+            <div class="flex-row">
+                <span class="eng-text">Location</span>
+                <hr>
+                <span class="icon"><img src="./images/flower.svg" alt=""></span>
+            </div>
             <div class="text">
                 <h5>시크릿가든웨딩</h5>
                 <p>대전 유성구 수통골로71번길 39</p>
@@ -266,11 +281,14 @@
             </div>
         </section>
         <section class="account">
-            <span class="eng-text">ACCOUNT</span>
+            <div class="flex-row">
+                <span class="eng-text">Account</span>
+                <hr>
+                <span class="icon"><img src="./images/flower.svg" alt=""></span>
+            </div>
             <div class="text">
                 <p>
-                    전해주시는 따뜻한 축하의 마음을 <br />
-                    오래도록 간직하며 <br />
+                    전해주시는 따뜻한 축하의 마음을 오래도록 간직하며 <br />
                     행복한 모습으로 보답하며 살겠습니다.
                 </p>
             </div>
@@ -312,7 +330,11 @@
             </ul>
         </section>
         <section class="contact">
-            <span class="eng-text">CONTACT</span>
+            <div class="flex-row">
+                <span class="eng-text">Contact</span>
+                <hr>
+                <span class="icon"><img src="./images/flower.svg" alt=""></span>
+            </div>
             <ul class="accordion">
                 <li>
                     <button>
@@ -397,7 +419,11 @@
             </ul>
         </section>
         <section class="guestbook">
-            <span class="eng-text">GUESTBOOK</span>
+            <div class="flex-row">
+                <span class="eng-text">Guestbook</span>
+                <hr>
+                <span class="icon"><img src="./images/flower.svg" alt=""></span>
+            </div>
             <dl>
                 <dt>우리에게 한마디 남겨주세요</dt>
                 <dd>
@@ -405,6 +431,32 @@
                     여러분의 메시지가 우리의 이야기를 채웁니다.
                 </dd>
             </dl>
+            <div class="item-wrap">
+                <div class="item-box">
+                    <div class="item"></div>
+                </div>
+                <button>작성하기</button>
+            </div>
+            <div class="guestbook-popup">
+                <div class="inner">
+                    <button class="close" type="button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <form>
+                        <div class="flex">
+                            <label for="">
+                                <span>이름</span>
+                                <input type="text">
+                            </label>
+                            <label for="">
+                                <span>내용</span>
+                                <textarea name="" id=""></textarea>
+                            </label>
+                            <button>남기기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
         <section class="share">
             <button type="button" onclick="shareMessage()">
@@ -413,16 +465,102 @@
             </button>
         </section>
     </main>
-</body>
+    <article>
+        <div class="inner">
+            <div class="bg">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="flex">
+                <p>We’re getting</p>
+                <p>Married</p>
+            </div>
+        </div>
+    </article>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+    // intro
+    window.scrollTo(0, 0);
+    document.body.classList.add("scrollX");
+    const intro = document.querySelector("article");
+    const textElements = intro.querySelectorAll(".flex p");
+
+    textElements.forEach((p) => {
+        const text = p.textContent;
+
+        p.innerHTML = [...text]
+            .map((char) => `<span>${char === " " ? "&nbsp;" : char}</span>`)
+            .join("");
+    });
+
+    intro.querySelectorAll(".flex p span").forEach((span, index) => {
+        span.style.animationDelay = `${index * 0.06}s`;
+    });
+    window.addEventListener("load", () => {
+        intro.classList.add("is-on");
+
+        setTimeout(() => {
+            intro.classList.add("is-off");
+        }, 2000);
+        setTimeout(() => {
+            intro.classList.add("is-move");
+            setTimeout(() => {
+                AOS.init();
+                AOS.refresh();
+                document.body.classList.remove("scrollX");
+            }, 1000);
+        }, 2400);
+    });
+
+    // countdown
+    const weddingDate = new Date("2026-11-15T12:00:00+09:00").getTime();
+
+    const daysEl = document.querySelector(".countdown .days span");
+    const hoursEl = document.querySelector(".countdown .hour span");
+    const minutesEl = document.querySelector(".countdown .min span");
+    const secondsEl = document.querySelector(".countdown .sec span");
+
+    function updateCountdown() {
+        const now = Date.now();
+        const distance = weddingDate - now;
+
+        if (distance <= 0) {
+            daysEl.textContent = "00";
+            hoursEl.textContent = "00";
+            minutesEl.textContent = "00";
+            secondsEl.textContent = "00";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor(
+            (distance % (1000 * 60)) / 1000
+        );
+
+        daysEl.textContent = String(days).padStart(2, "0");
+        hoursEl.textContent = String(hours).padStart(2, "0");
+        minutesEl.textContent = String(minutes).padStart(2, "0");
+        secondsEl.textContent = String(seconds).padStart(2, "0");
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
     // gallery
     const galleryPopup = document.querySelector(".gallery-popup");
     const gallerySwiper = new Swiper(".gallery-swiper", {
         slidesPerView: 1,
         spaceBetween: 0,
+        loop: true,
         navigation: {
-            nextEl: ".gallery-swiper .button-next",
-            prevEl: ".gallery-swiper .button-prev",
+            nextEl: ".gallery .button-next",
+            prevEl: ".gallery .button-prev",
         },
         keyboard: {
             enabled: true,
@@ -432,7 +570,6 @@
 
     document.querySelectorAll(".gallery .img-box figure").forEach((figure) => {
         figure.addEventListener("click", () => {
-            console.log('ddd')
             const img = figure.querySelector("img");
             const match = img.src.match(/images(\d+)\.jpg$/);
 
@@ -454,23 +591,27 @@
                 gallerySwiper.slideTo(0, 0);
             }
 
-            document.body.style.overflow = "hidden";
+            document.body.classList.add("scrollX");
         });
 
     });
     document.querySelector(".gallery-popup .close").addEventListener("click", closeGallery);
 
     galleryPopup.addEventListener("click", (e) => {
-        const swiper = galleryPopup.querySelector(".gallery-swiper");
-
-        if (!swiper.contains(e.target)) {
-            closeGallery();
+        if (
+            e.target.closest(".gallery-swiper") ||
+            e.target.closest(".buttons") ||
+            e.target.closest(".close")
+        ) {
+            return;
         }
+
+        closeGallery();
     });
 
     function closeGallery() {
+        document.body.classList.remove("scrollX");
         galleryPopup.classList.remove("is-on");
-        document.body.style.overflow = "";
     }
 
     document.querySelector(".gallery-popup").addEventListener("contextmenu", (e) => {
@@ -570,22 +711,17 @@
         Kakao.Share.sendDefault({
             objectType: 'feed',
             content: {
-                title: '소중한 분들을 초대합니다',
-                description: '우리의 특별한 날에 함께해주세요.',
+                title: '신재선 ♥ 이초롱 결혼합니다.',
+                description: '2026년 11월 15일 일요일 오후 12시',
                 imageUrl: 'https://iam2chorong.github.io/wedding/images/kakao.jpg',
                 link: {
                     mobileWebUrl: 'https://iam2chorong.github.io/wedding/',
                     webUrl: 'https://iam2chorong.github.io/wedding/',
                 },
             },
-            social: {
-                likeCount: 286,
-                commentCount: 45,
-                sharedCount: 845,
-            },
             buttons: [
                 {
-                    title: '청첩장 보기',
+                    title: '초대합니다',
                     link: {
                         mobileWebUrl: 'https://iam2chorong.github.io/wedding/',
                         webUrl: 'https://iam2chorong.github.io/wedding/',
@@ -595,4 +731,5 @@
         });
     }
 </script>
+</body>
 </html>
