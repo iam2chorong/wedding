@@ -710,6 +710,7 @@
     function shareMessage() {
         Kakao.Share.sendDefault({
             objectType: 'feed',
+
             content: {
                 title: '신재선♥이초롱 결혼합니다.',
                 description: '2026년 11월 15일 일요일 오후 12시',
@@ -719,15 +720,16 @@
                     webUrl: 'https://iam2chorong.github.io/wedding/',
                 },
             },
+
             buttons: [
                 {
                     title: '초대합니다',
                     link: {
                         mobileWebUrl: 'https://iam2chorong.github.io/wedding/',
                         webUrl: 'https://iam2chorong.github.io/wedding/',
-                    }
-                }
-            ]
+                    },
+                },
+            ],
         });
     }
 </script>
