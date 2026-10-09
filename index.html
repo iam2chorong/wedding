@@ -336,7 +336,30 @@
                             <div class="item">
                                 신랑
                                 <div class="flex-row">
-                                    <p>농협은행 302-1088-9769-51</p>
+                                    <div class="flex-col">
+                                        <p>농협은행 신재선</p>
+                                        <p class="number">302-1088-9769-51</p>
+                                    </div>
+                                    <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                신랑 아버지
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <p>농협은행 신문섭</p>
+                                        <p class="number">463108-51-002271</p>
+                                    </div>
+                                    <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                신랑 어머니
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <p>농협은행 윤일선</p>
+                                        <p class="number">463108-56-006606</p>
+                                    </div>
                                     <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
                                 </div>
                             </div>
@@ -353,7 +376,30 @@
                             <div class="item">
                                 신부
                                 <div class="flex-row">
-                                    <p>국민은행 595101-01-531093</p>
+                                    <div class="flex-col">
+                                        <p>국민은행 이초롱</p>
+                                        <p class="number">595101-01-531093</p>
+                                    </div>
+                                    <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                신부 아버지
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <p>카카오뱅크 이용림</p>
+                                        <p class="number">3333-02-5275032</p>
+                                    </div>
+                                    <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                신부 어머니
+                                <div class="flex-row">
+                                    <div class="flex-col">
+                                        <p>국민은행 박규희</p>
+                                        <p class="number">672702-01-136103</p>
+                                    </div>
                                     <button class="copy-button"><i class="fa-solid fa-copy"></i></button>
                                 </div>
                             </div>
@@ -702,7 +748,7 @@
         button.addEventListener("click", async () => {
             const accountText = button
                 .closest(".flex-row")
-                .querySelector("p")
+                .querySelector(".number")
                 .textContent;
 
             const accountNumber = accountText.replace(/\D/g, "");
