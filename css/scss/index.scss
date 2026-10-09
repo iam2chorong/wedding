@@ -183,8 +183,7 @@ section {
             }
             span {
                 display: block;
-                color: var(--color-white);
-								color: var(--color-black);
+				color: var(--color-black);
             }
         }
         .saturday {
@@ -233,7 +232,7 @@ section {
         grid-template-columns: repeat(5, 1fr);
         row-gap: 2px;
         column-gap: 2px;
-        border-radius: 8px;
+        border-radius: 12px;
         margin-top: 20px;
         overflow: hidden;
         figure {
@@ -475,6 +474,43 @@ section {
         }
     }
 }
+.with {
+    .item-box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        background: var(--color-white);
+        border-radius: 12px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+        padding: 28px 20px;
+        overflow: hidden;
+    }
+    figure {
+        text-align: center;
+        img {
+            width: 66%;
+        }
+    }
+    dl {
+        * {
+            text-align: center;
+        }
+		dt {
+			font-size: 2.0rem;
+			font-weight: 600;
+            margin-bottom: 20px;
+		}
+		dd {
+            display: flex;
+            flex-direction: column;
+			row-gap: 16px;
+			p {
+                font-size: 1.6rem;
+				line-height: 1.8;
+			}
+		}
+    }
+}
 .accordion {
     display: flex;
     flex-direction: column;
@@ -607,7 +643,7 @@ section {
 }
 .toast {
     background: rgba($color: #000000, $alpha: 0.8);
-    border-radius: 16px;
+    border-radius: 12px;
     color: var(--color-white);
     font-size: 1.4rem;
     padding: 8px 16px;

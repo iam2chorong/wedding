@@ -188,7 +188,6 @@ section .eng-text {
 }
 .day table .wedding-day span {
   display: block;
-  color: var(--color-white);
   color: var(--color-black);
 }
 .day table .saturday span {
@@ -229,7 +228,7 @@ section .eng-text {
   grid-template-columns: repeat(5, 1fr);
   row-gap: 2px;
   column-gap: 2px;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-top: 20px;
   overflow: hidden;
 }
@@ -475,6 +474,40 @@ section .eng-text {
   background: #3cc344;
 }
 
+.with .item-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+  padding: 28px 20px;
+  overflow: hidden;
+}
+.with figure {
+  text-align: center;
+}
+.with figure img {
+  width: 66%;
+}
+.with dl * {
+  text-align: center;
+}
+.with dl dt {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.with dl dd {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.with dl dd p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
 .accordion {
   display: flex;
   flex-direction: column;
@@ -609,7 +642,7 @@ section .eng-text {
 
 .toast {
   background: rgba(0, 0, 0, 0.8);
-  border-radius: 16px;
+  border-radius: 12px;
   color: var(--color-white);
   font-size: 1.4rem;
   padding: 8px 16px;
