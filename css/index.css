@@ -517,7 +517,8 @@ section .eng-text {
 .accordion li {
   background: var(--color-white);
   border: 1px solid var(--color-green);
-  border-radius: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
   position: relative;
   z-index: 1;
 }
