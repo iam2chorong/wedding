@@ -344,7 +344,7 @@ section {
             row-gap: 16px;
             background: rgb(60 68 56 / 90%);
             border-radius: 12px;
-            padding: 16px 40px 40px;
+            padding: 16px 32px 32px;
             margin: 0 auto;
             position: relative;
         }
@@ -355,6 +355,7 @@ section {
             width: 100%;
             display: flex;
             justify-content: flex-end;
+            transform: translateX(16px);
             i {
                 font-size: 2.4rem;
             }
@@ -380,7 +381,7 @@ section {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            padding: calc(25px + 16px) 12px 0;
+            padding: calc(25px + 16px) 9px 0;
             z-index: 2;
             @include position(absolute, 50%, 50%);
             i {
